@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Script -->
+    <script defer type="module" src="script.js"></script>
+    <title>Meme Generator</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/logo.png" alt="logo" />
+      </a>
+      <div class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#about">About</a></li>
+            <li><a class="main-nav-link" href="#how">How it works</a></li>
+            <li><a class="main-nav-link" href="#marketing">Marketing</a></li>
+            <li>
+              <a class="main-nav-link" href="#faq">FAQ's</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="#template">Meme Templates</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero grid grid--2-cols grid--center-v">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Create, and share the Funniest Memes
+            </h1>
+            <p class="hero-description">
+              Find trending meme templates, upload your own, add hilarious
+              captions, and download your masterpiece in seconds.
+            </p>
+            <a href="#template" class="btn btn--full margin-right-sm"
+              >Search Meme
+            </a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <img src="img/hero-1.png" class="hero-img" alt="hero-img" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="about">
+        <div class="container">
+          <span class="subheading">About</span>
+          <h2 class="heading-secondary">Why should you choose our tools?</h2>
+        </div>
+        <div class="container grid">
+          <p class="about-description text">
+            Our tools are built for speed, simplicity, and creativity helping
+            you make memes in seconds. <br />
+            With clean templates and social ready exports, your content stands
+            out effortlessly.
+          </p>
+        </div>
+        <div class="container grid grid--2-cols about-grid">
+          <div class="about">
+            <ion-icon class="about-icon icon" name="image-outline"></ion-icon>
+            <p class="about-title title">Extensive Template Library</p>
+            <p class="about-text text">
+              Access a wide range of high-resolution meme templates no
+              watermarks, no low-quality images, and strictly free from
+              offensive or NSFW content.
+            </p>
+          </div>
+          <div class="about">
+            <ion-icon class="about-icon icon" name="logo-instagram"></ion-icon>
+            <p class="about-title title">Social Media Platforms</p>
+            <p class="about-text text">
+              Download memes in popular aspect ratios like 1:1 and 4:3 — perfect
+              for posting on your favorite social media platforms.
+            </p>
+          </div>
+          <div class="about">
+            <ion-icon
+              class="about-icon icon"
+              name="lock-closed-outline"
+            ></ion-icon>
+            <p class="about-title title">Safe for All Uses</p>
+            <p class="about-text text">
+              All templates are selected with quality and appropriateness in
+              mind, making them suitable for professional use without
+              compromising on creativity.
+            </p>
+          </div>
+          <div class="about">
+            <ion-icon
+              class="about-icon icon"
+              name="download-outline"
+            ></ion-icon>
+            <p class="about-title title">Download in Seconds</p>
+            <p class="about-text text">
+              From browsing to downloading your final meme, the entire process
+              is fast, intuitive, and built for a smooth user experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">Search a Meme Template</h2>
+        </div>
+        <div class="container grid">
+          <p class="how-description text">
+            Browse through our massive collection of high-quality meme templates
+            or upload your own image to start fresh.
+          </p>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="how-description-box">
+            <div class="how">
+              <div class="how-heading">
+                <ion-icon class="how-icon" name="search-outline"></ion-icon>
+                <p class="how-title">Browse Meme Templates</p>
+              </div>
+              <p class="how-text text">
+                Use our smart search to find the perfect meme template from
+                trending formats to timeless classics in just seconds.
+              </p>
+            </div>
+            <div class="how">
+              <div class="how-heading">
+                <ion-icon class="how-icon" name="download-outline"></ion-icon>
+                <p class="how-title">Export Meme</p>
+              </div>
+              <p class="how-text text">
+                Export your meme in high resolution, ready for Instagram,
+                Twitter, WhatsApp, or wherever you want to share the laughs.
+              </p>
+            </div>
+          </div>
+          <div class="how-img-box">
+            <picture>
+              <img
+                src="/img/how-it-works.png"
+                alt="how it works image"
+                class="how-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-template" id="template">
+        <div class="container">
+          <span class="subheading">Templates</span>
+          <h2 class="heading-secondary">Pick a Template, Unleash Creativity</h2>
+          <p class="template-description text">
+            Choose from trending, popular, or classic meme templates. Search
+            easily and find exactly what you're looking for.
+          </p>
+        </div>
+        <div class="container template-search">
+          <div class="search">
+            <ion-icon class="template-icon" name="search-outline"></ion-icon>
+            <input
+              type="text"
+              placeholder="Search All Memes"
+              name="meme-title"
+              class="search-input"
+              maxlength="512"
+            />
+          </div>
+          <select class="select" name="select">
+            <option value="top-30">Top 30</option>
+            <option value="trending">Trending</option>
+            <option value="random">Random</option>
+            <option value="new-meme">New Memes</option>
+            <option value="old-meme">Old Memes</option>
+          </select>
+        </div>
+        <div class="search-result"></div>
+        <div class="container">
+          <div class="page">
+            <button class="btn btn--form template-paging template-prev">
+              <ion-icon
+                class="page-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <p class="template-page">1</p>
+            <button class="btn btn--form template-paging template-next">
+              <ion-icon
+                class="page-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-marketing" id="marketing">
+        <div class="container">
+          <span class="subheading">Marketing</span>
+          <h2 class="heading-secondary">How can memes boost your marketing?</h2>
+        </div>
+        <div class="container grid">
+          <p class="marketing-description text">
+            Memes are a powerful way to engage audiences, build brand
+            personality, and make your content shareable across platforms.
+          </p>
+        </div>
+        <div class="container grid grid--2-cols marketing-grid">
+          <div class="marketing-description grid grid--1-cols">
+            <div class="marketing">
+              <ion-icon
+                class="marketing-icon icon"
+                name="bag-handle-outline"
+              ></ion-icon>
+              <p class="marketing-title title">Social Media Managers</p>
+              <p class="marketing-text text">
+                Stay on top of trends and keep your feeds fresh with quick,
+                ready-to-share memes that drive engagement.
+              </p>
+            </div>
+            <div class="marketing">
+              <ion-icon
+                class="marketing-icon icon"
+                name="videocam-outline"
+              ></ion-icon>
+              <p class="marketing-title title">Content Creators</p>
+              <p class="marketing-text text">
+                Fuel your creativity with endless templates and tools to craft
+                memes that resonate with your audience.
+              </p>
+            </div>
+          </div>
+          <div class="marketing-img">
+            <picture>
+              <img
+                src="./img/meme-marketing-1.png"
+                class="market-img"
+                alt="hand shake"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="container grid grid--2-cols marketing-grid">
+          <div class="marketing-img">
+            <picture>
+              <img
+                src="./img/meme-marketing-2.png"
+                class="market-img"
+                alt="koala eating leaves"
+              />
+            </picture>
+          </div>
+          <div class="container grid grid--1-cols marketing-grid">
+            <div class="marketing">
+              <ion-icon
+                class="marketing-icon icon"
+                name="business-outline"
+              ></ion-icon>
+              <p class="marketing-title title">Businesses</p>
+              <p class="marketing-text text">
+                Build stronger connections with your audience through relatable,
+                light-hearted, and brand-safe memes.
+              </p>
+            </div>
+            <div class="marketing">
+              <ion-icon
+                class="marketing-icon icon"
+                name="megaphone-outline"
+              ></ion-icon>
+              <p class="marketing-title title">Marketers</p>
+              <p class="marketing-text text">
+                Take your campaigns to the next level with viral-worthy memes
+                designed to grab attention and spark conversations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-faq" id="faq">
+        <div class="container">
+          <span class="subheading">FAQ's</span>
+          <h2 class="heading-secondary">Frequently Asked Questions</h2>
+        </div>
+        <div class="container grid">
+          <p class="faq-description text">
+            Find quick answers to common questions about creating, editing, and
+            sharing memes on our platform.
+          </p>
+        </div>
+        <div class="container grid grid--1-cols grid--center-v faq-box">
+          <div class="faq">
+            <p class="faq-number">01</p>
+            <div>
+              <p class="faq-title title">Do the memes have watermarks?</p>
+              <p class="faq-text text">
+                Nope, All templates and generated memes are watermark-free. You
+                can even add your own custom watermark if you want.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <p class="faq-number">02</p>
+            <div>
+              <p class="faq-title title">How do I export my memes?</p>
+              <p class="faq-text text">
+                You can download memes in JPG, PNG, or JPEG formats, or copy
+                them instantly for quick sharing.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <p class="faq-number">03</p>
+            <div>
+              <p class="faq-title title">Are the meme templates safe to use?</p>
+              <p class="faq-text text">
+                Absolutely. Our library is clean, safe, and free of offensive or
+                NSFW content, making it perfect for both personal and
+                professional use.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <p class="faq-number">04</p>
+            <div>
+              <p class="faq-title title">
+                Can I use memes for marketing or business purposes?
+              </p>
+              <p class="faq-text text">
+                Yes, Our templates are curated for professional usage, so
+                businesses, marketers, and creators can confidently use them to
+                engage their audience.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <p class="faq-number">05</p>
+            <div>
+              <p class="faq-title title">
+                How many meme templates are available?
+              </p>
+              <p class="faq-text text">
+                You can explore hundreds of trending and classic templates, with
+                new ones added regularly to keep things fresh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--5-cols footer-grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo logo-2" src="img/logo.png" alt="Omnifood-logo" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" target="_blank" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" target="_blank" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" target="_blank" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" target="_blank" href="#"
+                ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2025</span> by MemeDrop, Inc.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contact">
+            <p class="address">
+              88, 1, MG Road, Vishweshwarapura, Basavanagudi, Bangalore,
+              Karnataka - 560004
+            </p>
+            <a class="footer-link" href="tel:9999999999">9999999999</a><br />
+            <a class="footer-link" href="mailto:example@gmail.com"
+              >example@gmail.com</a
+            >
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">ios app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About MemeDrop</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Meme partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li>
+              <a
+                class="footer-link"
+                href="https://imgflip.com/api"
+                target="_blank"
+                >ImgFlip</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://supermeme.ai/"
+                target="_blank"
+                >Supermeme</a
+              >
+            </li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- <div class="loader"></div>
+    <div class="container">
+      <h2 class="secondary-heading">All Memes</h2>
+    </div> -->
+  </body>
+</html>
