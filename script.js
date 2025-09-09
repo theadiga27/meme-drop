@@ -7,6 +7,9 @@ import { paginateMeme } from "./js/paginateMeme.js";
 import { searchMeme } from "./js/searchMeme.js";
 import { sortMeme } from "./js/sortMeme.js";
 
+const allLinks = document.querySelectorAll("a:link");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 const container = document.querySelector(".search-result");
 const next = document.querySelector(".template-next");
 const prev = document.querySelector(".template-prev");
@@ -15,11 +18,8 @@ const select = document.querySelector(".select");
 const input = document.querySelector(".search-input");
 const copyrightYear = document.querySelector(".year");
 
-// const dropBox = document.querySelector(".drop-box");
-// const imageUpload = document.querySelector(".upload-image");
-// const browseImage = document.querySelector(".browse-image");
-// const editTools = document.querySelector(".edit-tools");
-// const afterDrop = document.querySelector(".after-drop");
+const url = "https://api.imgflip.com/get_memes";
+
 
 // Params
 const urlParams = new URLSearchParams(window.location.search);
@@ -27,11 +27,22 @@ const search = urlParams.get("search");
 const pageNumber = urlParams.get("page");
 const sort = urlParams.get("sort");
 
-const url = "https://api.imgflip.com/get_memes";
 
 let allMemes;
 let filteredMemes;
 let paginatedMemes;
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
+
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
 
 const getMemes = async () => {
   try {
@@ -172,3 +183,4 @@ const updatingUrl = () => {
 getMemes();
 
 copyrightYear.innerHTML = new Date().getFullYear();
+

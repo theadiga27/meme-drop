@@ -63,13 +63,13 @@ export const copyIconEvent = async (copyIcon) => {
     const ctx = canvas.getContext("2d");
     ctx.drawImage(bitmap, 0, 0);
 
-    const pngBlob = await new Promise((resolve) =>
-      canvas.toBlob(resolve, "image/png")
+    const imgBlob = await new Promise((resolve) =>
+      canvas.toBlob(resolve, "image/*")
     );
 
     await navigator.clipboard.write([
       new ClipboardItem({
-        "image/png": pngBlob,
+        "image/*": imgBlob,
       }),
     ]);
   } catch (e) {

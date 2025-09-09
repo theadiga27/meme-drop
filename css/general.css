@@ -14,7 +14,7 @@
 
   --color-white: #fff;
 
-  --color-other: #e97a11;
+  --color-secondary: #e97a11;
 }
 
 * {
@@ -25,7 +25,8 @@
 
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .body {
@@ -99,7 +100,7 @@ section {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: var(--color-other);
+  color: var(--color-secondary);
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;

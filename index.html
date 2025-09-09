@@ -25,12 +25,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
 
     <!-- Script -->
     <script defer type="module" src="script.js"></script>
     <title>Meme Generator</title>
   </head>
-  <body class="body">
+  <body class="body sticky">
     <header class="header">
       <a href="#">
         <img class="logo" src="img/logo.png" alt="logo" />
@@ -49,6 +50,12 @@
             </li>
           </ul>
         </nav>
+        <div class="nav-mobile">
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon  class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -56,20 +63,19 @@
         <div class="hero grid grid--2-cols grid--center-v">
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              Create, and share the Funniest Memes
+              Search and <br/>Download the Memes Templates
             </h1>
             <p class="hero-description">
-              Find trending meme templates, upload your own, add hilarious
-              captions, and download your masterpiece in seconds.
+             Explore a wide range of trending meme templates and browse through a collection of popular and classic memes. Find your favorite designs to spark creativity or just for a good laugh. 
             </p>
             <a href="#template" class="btn btn--full margin-right-sm"
               >Search Meme
             </a>
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &rarr;</a>
           </div>
           <div class="hero-img-box">
             <picture>
-              <img src="img/hero-1.png" class="hero-img" alt="hero-img" />
+              <img src="img/hero.png" class="hero-img" alt="hero-img" />
             </picture>
           </div>
         </div>
@@ -311,7 +317,7 @@
         </div>
         <div class="container grid">
           <p class="faq-description text">
-            Find quick answers to common questions about creating, editing, and
+            Find quick answers to common questions about creating, and
             sharing memes on our platform.
           </p>
         </div>
@@ -375,11 +381,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container grid grid--5-cols footer-grid">
+    <footer class="footer footer-grid">
+      <div class="container grid grid--5-cols">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img class="logo logo-2" src="img/logo.png" alt="Omnifood-logo" />
+            <img class="logo" src="img/logo.png" alt="logo" />
           </a>
           <ul class="social-links">
             <li>
@@ -412,8 +418,7 @@
           <p class="footer-heading">Contact us</p>
           <address class="contact">
             <p class="address">
-              88, 1, MG Road, Vishweshwarapura, Basavanagudi, Bangalore,
-              Karnataka - 560004
+              88, 1, MG Road, Bangalore, Karnataka - 560004, 
             </p>
             <a class="footer-link" href="tel:9999999999">9999999999</a><br />
             <a class="footer-link" href="mailto:example@gmail.com"
@@ -464,9 +469,5 @@
         </nav>
       </div>
     </footer>
-    <!-- <div class="loader"></div>
-    <div class="container">
-      <h2 class="secondary-heading">All Memes</h2>
-    </div> -->
   </body>
 </html>
