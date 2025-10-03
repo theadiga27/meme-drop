@@ -1,6 +1,24 @@
 # API URL
 https://api.imgflip.com/get_memes 
 
+# Colors
+--color-primary: #0088aa;
+
+--color-shades-1: #195969;
+--color-shades-2: #1a343b;
+
+--color-tints-1: #c6ffff;
+--color-tints-2: #f1ffff;
+
+--color-gray-0: #6d6d6d;
+--color-gray-1: #3a3a3a;
+--color-gray-2: #555;
+--color-gray-3: #333;
+
+--color-white: #fff;
+
+--color-secondary: #e97a11;
+
 # Hero Section
 ## Heading
 Search and Download the Memes Templates 

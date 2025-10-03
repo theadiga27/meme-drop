@@ -3,7 +3,6 @@ const randomMeme = (memes) => {
     const j = Math.floor(Math.random() * (i + 1));
     [memes[i], memes[j]] = [memes[j], memes[i]];
   }
-  memes;
 };
 
 const trendingMeme = (memes) => {
